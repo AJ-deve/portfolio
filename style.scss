@@ -184,18 +184,18 @@ nav {
 }
 .section {
   &:nth-child(2) {
-    background-image: url(/back2.jpg);
+    // background-image: url(/back2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.4);
   }
   &:nth-child(3) {
-    background-image: url(/back3.jpg);
+    // background-image: url(/back3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
   &:nth-child(4) {
-    background-image: url(/back4.jpg);
+    // background-image: url(/back4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -275,7 +275,7 @@ nav {
   text-decoration: none;
   h1 {
     font-size: 2rem;
-    margin-top: 2rem;
+    padding-top: 2rem;
     color: $color_7;
     transition: all 0.4s;
     text-align: center;
@@ -591,9 +591,17 @@ body {
 }
 
 #stars-container {
-  height: 400vh;
+  height: 200vh;
   width: 100vw;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #191f24 100%);
+  overflow: hidden;
+  @include translate50;
+  z-index: -99;
+}
+#stars-container2 {
+  height: 200vh;
+  width: 100vw;
+  background: radial-gradient(ellipse at bottom, #191f24 0%, #1b2735 100%);
   overflow: hidden;
   @include translate50;
   z-index: -99;
